@@ -1,0 +1,14 @@
+<ul>
+    <li><a [routerLink]="'/home'">Home</a></li>
+    <li><a [routerLink]="'/login'">Login</a></li>
+    <!-- <li><a [routerLink]="'/find-all'">findAll</a></li> -->
+    <li><a (click)="findAll()">findAll</a></li>
+    <li><a [routerLink]="'/createcustomer'">CreateCustomer</a></li>
+    <li><a [routerLink]="'/updata'">Updata</a></li>
+</ul>
+
+<router-outlet></router-outlet>
+
+<div *ngIf="show">
+    <app-find-all></app-find-all>
+</div>
